@@ -83,12 +83,7 @@ StatsScreenMain:
 StatsScreenMobile:
 	xor a
 	ld [wJumptableIndex], a
-	ld [wStatsScreenFlags], a
-
-	ld a, [wStatsScreenFlags]
-	and ~STAT_PAGE_MASK
-	or PINK_PAGE ; first_page
-	ld [wStatsScreenFlags], a
+	ld [wStatsScreenFlags], a ; PINK_PAGE
 
 .loop
 	farcall Mobile_SetOverworldDelay
@@ -565,7 +560,6 @@ StatsScreen_LoadGFX:
 .PageTilemap:
 	ld a, [wStatsScreenFlags]
 	maskbits NUM_STAT_PAGES
-	dec a
 	ld hl, .Jumptable
 	rst JumpTable
 	ret
@@ -894,7 +888,7 @@ LoadOrangePage:
 	hlcoord 1, 12
 	call PlaceString
 	hlcoord 2, 13
-	ld [hl], "<LV>"
+	ld [hl], CHARVAL("<LV>")
 	ret
 
 .unknown_level
