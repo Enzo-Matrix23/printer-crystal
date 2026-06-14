@@ -646,6 +646,7 @@ OakSpeech:
 
 	ld hl, OakText1
 	call PrintText
+if !DEF(_DEBUG)
 	call RotateThreePalettesRight
 	call ClearTilemap
 
@@ -695,6 +696,7 @@ OakSpeech:
 	call GetSGBLayout
 	call Intro_RotatePalettesLeftFrontpic
 
+endc
 	ld hl, OakText6
 	call PrintText
 	call NamePlayer

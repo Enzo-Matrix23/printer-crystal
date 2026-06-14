@@ -18,7 +18,7 @@ MysteryGiftItems:
 	db MIRACLEBERRY
 	db GOLD_BERRY
 	db REVIVE
-	db GREAT_BALL
+	db ULTRA_BALL
 	db SUPER_REPEL
 	db MAX_REPEL
 	db ELIXER
@@ -34,6 +34,6 @@ MysteryGiftItems:
 	db HP_UP
 	db PP_UP
 	db RARE_CANDY
-	db BLUESKY_MAIL
-	db MIRAGE_MAIL
+	db SILVER_LEAF
+	db GOLD_LEAF
 .End
