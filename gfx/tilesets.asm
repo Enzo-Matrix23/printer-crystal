@@ -335,3 +335,23 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 
 TilesetAerodactylWordRoomMeta::
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
+
+TilesetMuseumGFX::
+INCBIN "gfx/tilesets/museum.2bpp.lz"
+
+TilesetMuseumMeta::
+INCBIN "data/tilesets/museum_metatiles.bin"
+
+TilesetMuseumColl::
+INCBIN "data/tilesets/museum_collision.asm"
+
+SECTION "Tileset Data 9", ROMX
+
+TilesetIslandGFX::
+INCBIN "gfx/tilesets/island.2bpp.lz"
+
+TilesetIslandMeta::
+INCBIN "data/tilesets/island_metatiles.bin"
+
+TilesetIslandColl::
+INCBIN "data/tilesets/island_collision.asm"
